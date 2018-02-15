@@ -329,7 +329,7 @@ Citizen.CreateThread( function()
 	SetNuiFocus( false )
 
 	while true do 
-		if ( IsControlJustReleased( 0, 244 ) and GetLastInputMethod( 2 ) then	
+       	    if ( IsControlJustReleased( 0, 244 ) and IsInputDisabled( 2 ) then   	
 			ToggleActionMenu()
 		end ```
 		
