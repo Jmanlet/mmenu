@@ -324,14 +324,13 @@ end )
 --[[
 END OF MISCELLANEOUS 
 ]]--
-```lua
 Citizen.CreateThread( function()
 	SetNuiFocus( false )
 
 	while true do 
        	    if ( IsControlJustReleased( 0, 244 ) and IsInputDisabled( 2 ) then   	
 			ToggleActionMenu()
-		end ```
+		end 
 		
 	    if ( menuEnabled ) then
             local ped = GetPlayerPed( -1 )	
